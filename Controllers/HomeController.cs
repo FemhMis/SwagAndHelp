@@ -85,7 +85,7 @@ namespace SwagAndHelp.Controllers
         /// <returns></returns>
         public ActionResult ResourceModel(string modelName)
         {
-            string sPath = Server.MapPath("~/App_Date/SwagAndHelp.xml");
+            string sPath = Server.MapPath("~/App_Data/SwagAndHelp.xml");
             #region "微軟提供的Function"
             using (XmlReader xmlReader = XmlReader.Create(new StringReader(System.IO.File.ReadAllText(sPath))))
             {

@@ -5,7 +5,7 @@ using System.Web;
 
 namespace SwagAndHelp.Models
 {
-    #region "預設的類別，請勿動，動了會出錯"
+    #region "Default Models, Please don't edit, if you edit maybe error."
     internal class MyDocument
     {
         internal string Type { get { return Key.Substring(0, 1); } }
@@ -89,7 +89,7 @@ namespace SwagAndHelp.Models
         public string Children { get; set; }
     }
     /// <summary>
-    /// 除錯使用的class
+    /// error class
     /// </summary>
     public class ErrorInfo
     {
@@ -109,12 +109,12 @@ namespace SwagAndHelp.Models
     #endregion
     
     /// <summary>
-    /// 回傳結果
+    /// return result
     /// </summary>
     public class ReturnResult
     {
         /// <summary>
-        /// 初始化類別
+        /// default class
         /// </summary>
         public ReturnResult()
         {
@@ -123,15 +123,15 @@ namespace SwagAndHelp.Models
             Data = new System.Dynamic.ExpandoObject() { };
         }
         /// <summary>
-        /// 程式運作結果
+        /// progress result
         /// </summary>
         public Boolean Result { get; set; }
         /// <summary>
-        /// 程式運作回傳訊息
+        /// progress message
         /// </summary>
         public string Msg { get; set; }
         /// <summary>
-        /// 回傳的資料（動態類型）
+        /// return data (dynamic type)
         /// </summary>
         public dynamic Data { get; set; }
     }
@@ -153,5 +153,23 @@ namespace SwagAndHelp.Models
         /// Third column （type of decimal）
         /// </summary>
         public decimal ThirdCol { get; set; }
+    }
+    /// <summary>
+    /// this is my second class
+    /// </summary>
+    public class MySecondClass
+    {
+        /// <summary>
+        /// column 1
+        /// </summary>
+        public string Col01 { get; set; }
+        /// <summary>
+        /// array 1
+        /// </summary>
+        public List<string> Arr01 { get; set; }
+        /// <summary>
+        /// list of first class
+        /// </summary>
+        public List<MyFirstClass> List01 { get; set; }
     }
 }

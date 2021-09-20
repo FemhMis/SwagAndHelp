@@ -136,7 +136,7 @@
         </member>
         <member name="T:SwagAndHelp.Models.ErrorInfo">
             <summary>
-            除錯使用的class
+            error class
             </summary>
         </member>
         <member name="P:SwagAndHelp.Models.ErrorInfo.Ctrl">
@@ -156,27 +156,27 @@
         </member>
         <member name="T:SwagAndHelp.Models.ReturnResult">
             <summary>
-            回傳結果
+            return result
             </summary>
         </member>
         <member name="M:SwagAndHelp.Models.ReturnResult.#ctor">
             <summary>
-            初始化類別
+            default class
             </summary>
         </member>
         <member name="P:SwagAndHelp.Models.ReturnResult.Result">
             <summary>
-            程式運作結果
+            progress result
             </summary>
         </member>
         <member name="P:SwagAndHelp.Models.ReturnResult.Msg">
             <summary>
-            程式運作回傳訊息
+            progress message
             </summary>
         </member>
         <member name="P:SwagAndHelp.Models.ReturnResult.Data">
             <summary>
-            回傳的資料（動態類型）
+            return data (dynamic type)
             </summary>
         </member>
         <member name="T:SwagAndHelp.Models.MyFirstClass">
@@ -197,6 +197,26 @@
         <member name="P:SwagAndHelp.Models.MyFirstClass.ThirdCol">
             <summary>
             Third column （type of decimal）
+            </summary>
+        </member>
+        <member name="T:SwagAndHelp.Models.MySecondClass">
+            <summary>
+            this is my second class
+            </summary>
+        </member>
+        <member name="P:SwagAndHelp.Models.MySecondClass.Col01">
+            <summary>
+            column 1
+            </summary>
+        </member>
+        <member name="P:SwagAndHelp.Models.MySecondClass.Arr01">
+            <summary>
+            array 1
+            </summary>
+        </member>
+        <member name="P:SwagAndHelp.Models.MySecondClass.List01">
+            <summary>
+            list of first class
             </summary>
         </member>
         <member name="T:SwagAndHelp.OwinStartUp">
