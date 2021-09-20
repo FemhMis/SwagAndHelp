@@ -1,0 +1,214 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SwagAndHelp</name>
+    </assembly>
+    <members>
+        <member name="T:SwagAndHelp.RouteConfig">
+            <summary>
+            system route config
+            </summary>
+        </member>
+        <member name="M:SwagAndHelp.RouteConfig.RegisterRoutes(System.Web.Routing.RouteCollection)">
+            <summary>
+            Register Routes(
+            </summary>
+            <param name="routes"></param>
+        </member>
+        <member name="T:SwagAndHelp.WebApiConfig">
+            <summary>
+            Web Api Config
+            </summary>
+        </member>
+        <member name="M:SwagAndHelp.WebApiConfig.Register(System.Web.Http.HttpConfiguration)">
+            <summary>
+            Register
+            </summary>
+            <param name="config"></param>
+        </member>
+        <member name="T:SwagAndHelp.Controllers.apiController">
+            <summary>
+            api controller
+            </summary>
+        </member>
+        <member name="M:SwagAndHelp.Controllers.apiController.MyFirstAPI(System.String)">
+            <summary>
+            this is my first web api
+            </summary>
+            <param name="nm"></param>
+            <returns></returns>
+        </member>
+        <member name="T:SwagAndHelp.Controllers.ErrorController">
+            <summary>
+            error controller
+            </summary>
+        </member>
+        <member name="M:SwagAndHelp.Controllers.ErrorController.Error">
+            GET: Error
+        </member>
+        <member name="T:SwagAndHelp.Controllers.HomeController">
+            <summary>
+            home controller
+            </summary>
+        </member>
+        <member name="M:SwagAndHelp.Controllers.HomeController.Index">
+            GET: Home
+        </member>
+        <member name="M:SwagAndHelp.Controllers.HomeController.Api">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SwagAndHelp.Controllers.HomeController.Models">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SwagAndHelp.Controllers.HomeController.ResourceModel(System.String)">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:SwagAndHelp.Global">
+            <summary>
+            global class
+            </summary>
+        </member>
+        <member name="M:SwagAndHelp.Global.Application_Start(System.Object,System.EventArgs)">
+            <summary>
+            Application Start
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="T:SwagAndHelp.Models.ModelInfo">
+            <summary>
+            Model Class
+            </summary>
+        </member>
+        <member name="P:SwagAndHelp.Models.ModelInfo.Name">
+            <summary>
+            model name (single)
+            </summary>
+        </member>
+        <member name="P:SwagAndHelp.Models.ModelInfo.Desc">
+            <summary>
+            description 
+            </summary>
+        </member>
+        <member name="P:SwagAndHelp.Models.ModelInfo.Cols">
+            <summary>
+            columns
+            </summary>
+        </member>
+        <member name="T:SwagAndHelp.Models.ColumnInfo">
+            <summary>
+            column class
+            </summary>
+        </member>
+        <member name="P:SwagAndHelp.Models.ColumnInfo.Name">
+            <summary>
+            column name
+            </summary>
+        </member>
+        <member name="P:SwagAndHelp.Models.ColumnInfo.Type">
+            <summary>
+            column property
+            </summary>
+        </member>
+        <member name="P:SwagAndHelp.Models.ColumnInfo.Rule">
+            <summary>
+            column Rule
+            </summary>
+        </member>
+        <member name="P:SwagAndHelp.Models.ColumnInfo.Desc">
+            <summary>
+            description 
+            </summary>
+        </member>
+        <member name="P:SwagAndHelp.Models.ColumnInfo.Children">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:SwagAndHelp.Models.ErrorInfo">
+            <summary>
+            除錯使用的class
+            </summary>
+        </member>
+        <member name="P:SwagAndHelp.Models.ErrorInfo.Ctrl">
+            <summary>
+            錯誤的Ctrl
+            </summary>
+        </member>
+        <member name="P:SwagAndHelp.Models.ErrorInfo.Act">
+            <summary>
+            錯誤的Action
+            </summary>
+        </member>
+        <member name="P:SwagAndHelp.Models.ErrorInfo.Ex">
+            <summary>
+            錯誤的訊息
+            </summary>
+        </member>
+        <member name="T:SwagAndHelp.Models.ReturnResult">
+            <summary>
+            回傳結果
+            </summary>
+        </member>
+        <member name="M:SwagAndHelp.Models.ReturnResult.#ctor">
+            <summary>
+            初始化類別
+            </summary>
+        </member>
+        <member name="P:SwagAndHelp.Models.ReturnResult.Result">
+            <summary>
+            程式運作結果
+            </summary>
+        </member>
+        <member name="P:SwagAndHelp.Models.ReturnResult.Msg">
+            <summary>
+            程式運作回傳訊息
+            </summary>
+        </member>
+        <member name="P:SwagAndHelp.Models.ReturnResult.Data">
+            <summary>
+            回傳的資料（動態類型）
+            </summary>
+        </member>
+        <member name="T:SwagAndHelp.Models.MyFirstClass">
+            <summary>
+            this is my first class
+            </summary>
+        </member>
+        <member name="P:SwagAndHelp.Models.MyFirstClass.FirstCol">
+            <summary>
+            first column （type of string）
+            </summary>
+        </member>
+        <member name="P:SwagAndHelp.Models.MyFirstClass.SecondCol">
+            <summary>
+            Second column （type of DateTime）
+            </summary>
+        </member>
+        <member name="P:SwagAndHelp.Models.MyFirstClass.ThirdCol">
+            <summary>
+            Third column （type of decimal）
+            </summary>
+        </member>
+        <member name="T:SwagAndHelp.OwinStartUp">
+            <summary>
+            Owin StartUp 
+            </summary>
+        </member>
+        <member name="M:SwagAndHelp.OwinStartUp.Configuration(Owin.IAppBuilder)">
+            <summary>
+            Configuration
+            </summary>
+            <param name="app"></param>
+        </member>
+    </members>
+</doc>

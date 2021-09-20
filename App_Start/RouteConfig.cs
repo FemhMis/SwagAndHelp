@@ -7,8 +7,15 @@ using System.Web.Routing;
 
 namespace SwagAndHelp
 {
+    /// <summary>
+    /// system route config
+    /// </summary>
     public class RouteConfig
     {
+        /// <summary>
+        /// Register Routes(
+        /// </summary>
+        /// <param name="routes"></param>
         public static void RegisterRoutes(RouteCollection routes)
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");

@@ -10,8 +10,16 @@ using System.Web.Http;
 
 namespace SwagAndHelp
 {
+    /// <summary>
+    /// global class
+    /// </summary>
     public class Global : HttpApplication
     {
+        /// <summary>
+        /// Application Start
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         void Application_Start(object sender, EventArgs e)
         {
             // 應用程式啟動時執行的程式碼

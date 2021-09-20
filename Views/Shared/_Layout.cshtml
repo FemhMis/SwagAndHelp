@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="~/Content/bootstrap.css" rel="stylesheet" type="text/css" />
+</head>
+<body class="w-100 d-flex flex-column" style="height:100vh;">
+    <header class="w-100 bg-dark">
+        <div class="container d-flex">
+            <div class="d-flex">
+                <span class="p-1 h4 text-light">Coarse Fish</span>
+            </div>
+            <nav class="nav">
+                <a class="p-2 h5 text-light border-0" href="@Url.Action("Index", "Home")">Index</a>
+                <a class="p-2 h5 text-light border-0" href="@Url.Action("Api", "Home")">API</a>
+                <a class="p-2 h5 text-light border-0" href="@Url.Action("Models", "Home")">Model</a>
+            </nav>
+        </div>
+    </header>
+    <main class="d-flex flex-fill w-100">
+        @RenderBody()
+    </main>
+</body>
+</html>

@@ -1,0 +1,20 @@
+﻿@model SwagAndHelp.Models.ErrorInfo
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Error</title>
+</head>
+<body>
+    <div>
+        <h2>錯誤的控制項： @Model.Ctrl</h2>
+        <h2>錯誤的動作名稱：@Model.Act</h2>
+        <h2>錯誤的訊息：@Model.Ex.Message</h2>
+    </div>
+</body>
+</html>

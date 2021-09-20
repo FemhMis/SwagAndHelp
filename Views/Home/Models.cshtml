@@ -1,0 +1,43 @@
+﻿@using SwagAndHelp.Models;
+@model List<ModelInfo>
+
+@{
+    ViewBag.Title = "Model query";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container-fluid">
+    <section class="content-wrapper main-content clear-fix">
+        @if (Model.Count == 0)
+        {
+            <h1>目前沒有類別清單</h1>
+        }
+        else
+        {
+            <h1 class="w-100">類別清單</h1>
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        @*<th scope="col"><span class="p-2">#</span> </th>*@
+                        <th scope="col" class="col-3"><span class="p-2">類別名稱</span> </th>
+                        <th scope="col" class="col-9"><span class="p-2">描述</span> </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (ModelInfo oTMP in Model)
+                    {
+                        <tr class="@(oTMP.Name=="ModelInfo"||oTMP.Name== "ColumnInfo"||oTMP.Name== "ErrorInfo" ? "d-none":"")">
+                            @*<td scope="row"><a href="ABC" class="p-2"></a></td>*@
+                            <td scope="row" class="col-3">
+                                <a href="@Url.Action("ResourceModel", "Home", new { modelName = oTMP.Name })" class="p-2">@oTMP.Name</a>
+                            </td>
+                            <td class="col-9">
+                                <span class="p-2">@oTMP.Desc</span>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        }
+    </section>
+</div>
